@@ -1,0 +1,7 @@
+Write a maximum and minimum float:  could have a fixed number of variables
+Wright a kth small float:   could have a fixed number of variables
+Wright the sum of the squares of the floats:  could have a fixed number of variables
+Write the average of the n floats:  could have a fixed number of variables
+Write the percentage of floats greater than the agerage: would require saving all the values
+Wright the n floats in increasing order: would require saving all the values
+Wright the n floats in random order: would require saving all the values
