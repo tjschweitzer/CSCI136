@@ -1,17 +1,18 @@
 import sys
-
+ ## Main Handler
 class stdinHandler:
     def line(self,l):
         pass
     def done(self,):
         pass
-
+ ## Cat
 class cat(stdinHandler):
     def line(self,l):
         print(l)
     def done(self):
         pass
 
+ ## Head
 class head(stdinHandler):
     def __init__(self,length):
         self._length = int(length)
@@ -25,6 +26,7 @@ class head(stdinHandler):
     def done(self):
         pass
 
+ ## Tail
 class tail(stdinHandler):
     def __init__(self, length):
         self._length = int(length)
@@ -40,6 +42,7 @@ class tail(stdinHandler):
         for i in backArray:
             print(i)
 
+ # Sort
 class sort(stdinHandler):
     def __init__(self):
         self._lines = []
@@ -53,6 +56,7 @@ class sort(stdinHandler):
         for i in sArray:
             print(i)
 
+ ##Unique
 class unique(stdinHandler):
     def __init__(self):
         self._lines = set()
@@ -64,6 +68,7 @@ class unique(stdinHandler):
         for i in self._lines:
             print(i)
 
+## Count
 class count(stdinHandler):
     def __init__(self):
         self._lines = {}
