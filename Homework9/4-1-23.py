@@ -1,4 +1,5 @@
 # largest array size
+# Limit is between 10000x10000 and 30000x30000
 
 import sys
 
