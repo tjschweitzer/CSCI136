@@ -10,7 +10,6 @@ class queStack:
     # pushed to end of stack
     def push(self, data):
         temp = node(data)
-
         if self.head==None:  #if the stack is empty it will assign the node to the head as well
             self.head=temp
             self.tail=temp
@@ -41,14 +40,19 @@ k = int(sys.argv[1])
 line = str(sys.stdin)
 
 
-print(f'The origional String was \'{line}\'')
+
+
+
 # Pushes each charter in the string to the stack
 for i in range(len(line)):
     queue.push(line[i])
 
-# pops from the stack untill kth value is reached
+# pops from the stack until kth value is reached
 for i in range(k):
     last = queue.pop()
+    print(f'{last} removed')
+
+print(f'\nThe original String was \'{line}\'')
 
 print(f'The {k}th value from the end would be {last}')
 
