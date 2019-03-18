@@ -23,12 +23,12 @@ class cat(stdinHandler):
 
     ## Head
 class head(stdinHandler):
-    def __init__(self,length):
+    def __init__(self, length):
         self._length = int(length)
         self._count = 0
 
-    def line(self,l):
-        if self._length >+ self._count:
+    def line(self, l):
+        if self._length >= self._count:
             print(l)
         self._count = self._count + 1
 
